@@ -16,8 +16,6 @@
 @implementation HRCollectionViewModel
 
 #pragma mark - Initialize
-
-#ifdef RACSupport
 + (instancetype)bindWithCollectionView:(UICollectionView *)collectionView dataSource:(RACSignal *)source selectionCommand:(RACCommand *)command templateCell:(UINib *)nibCell
 {
     return [[self alloc] initWithCollectionView:collectionView dataSource:source selectionCommand:command templateCell:nibCell];
@@ -78,7 +76,6 @@
     
     return self;
 }
-#endif
 
 #pragma mark - DataSource and Delegate
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -100,9 +97,7 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-#ifdef RACSupport
     [_selectCommand execute:_data[indexPath.row]];
-#endif
 }
 
 
