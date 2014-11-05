@@ -15,6 +15,8 @@
 		657D1C351A09C7BC00A33904 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 657D1C341A09C7BC00A33904 /* Images.xcassets */; };
 		657D1C381A09C7BC00A33904 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 657D1C361A09C7BC00A33904 /* LaunchScreen.xib */; };
 		657D1C441A09C7BD00A33904 /* HRTableCollectionViewModelDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 657D1C431A09C7BD00A33904 /* HRTableCollectionViewModelDemoTests.m */; };
+		657D1C501A09ECDB00A33904 /* HRTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 657D1C4F1A09ECDB00A33904 /* HRTableViewModel.m */; };
+		657D1C531A09ED1200A33904 /* HRCollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 657D1C521A09ED1200A33904 /* HRCollectionViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,11 @@
 		657D1C3D1A09C7BD00A33904 /* HRTableCollectionViewModelDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HRTableCollectionViewModelDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		657D1C421A09C7BD00A33904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		657D1C431A09C7BD00A33904 /* HRTableCollectionViewModelDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRTableCollectionViewModelDemoTests.m; sourceTree = "<group>"; };
+		657D1C4E1A09ECDB00A33904 /* HRTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRTableViewModel.h; sourceTree = "<group>"; };
+		657D1C4F1A09ECDB00A33904 /* HRTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRTableViewModel.m; sourceTree = "<group>"; };
+		657D1C511A09ED1200A33904 /* HRCollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRCollectionViewModel.h; sourceTree = "<group>"; };
+		657D1C521A09ED1200A33904 /* HRCollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRCollectionViewModel.m; sourceTree = "<group>"; };
+		657D1C541A09EF9400A33904 /* BindViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindViewDelegate.h; sourceTree = "<group>"; };
 		D21283F5C500BB1CA2364110 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E840AE634770FC3DA7F3AFFB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +104,7 @@
 		657D1C261A09C7BC00A33904 /* HRTableCollectionViewModelDemo */ = {
 			isa = PBXGroup;
 			children = (
+				657D1C4D1A09EC8F00A33904 /* HRTableCollectionViewModel */,
 				657D1C2B1A09C7BC00A33904 /* AppDelegate.h */,
 				657D1C2C1A09C7BC00A33904 /* AppDelegate.m */,
 				657D1C2E1A09C7BC00A33904 /* ViewController.h */,
@@ -133,6 +141,18 @@
 				657D1C421A09C7BD00A33904 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		657D1C4D1A09EC8F00A33904 /* HRTableCollectionViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				657D1C541A09EF9400A33904 /* BindViewDelegate.h */,
+				657D1C4E1A09ECDB00A33904 /* HRTableViewModel.h */,
+				657D1C4F1A09ECDB00A33904 /* HRTableViewModel.m */,
+				657D1C511A09ED1200A33904 /* HRCollectionViewModel.h */,
+				657D1C521A09ED1200A33904 /* HRCollectionViewModel.m */,
+			);
+			path = HRTableCollectionViewModel;
 			sourceTree = "<group>";
 		};
 		F95CD137A483A2520CBCA1B6 /* Frameworks */ = {
@@ -280,7 +300,9 @@
 			files = (
 				657D1C301A09C7BC00A33904 /* ViewController.m in Sources */,
 				657D1C2D1A09C7BC00A33904 /* AppDelegate.m in Sources */,
+				657D1C531A09ED1200A33904 /* HRCollectionViewModel.m in Sources */,
 				657D1C2A1A09C7BC00A33904 /* main.m in Sources */,
+				657D1C501A09ECDB00A33904 /* HRTableViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
