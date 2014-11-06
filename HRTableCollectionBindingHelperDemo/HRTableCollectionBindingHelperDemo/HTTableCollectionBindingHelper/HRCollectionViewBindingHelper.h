@@ -1,5 +1,5 @@
 //
-//  HRCollectionBindingHelper.h
+//  HRCollectionViewBindingHelper.h
 //  HRTableCollectionBindingDemo
 //
 //  Created by Ran on 14/11/5.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <ReactiveCocoa.h>
 
-@interface HRCollectionBindingHelper : NSObject <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface HRCollectionViewBindingHelper : NSObject <UICollectionViewDataSource, UICollectionViewDelegate>
 {
     NSArray                 *_data;
     UICollectionView        *_collectionView;

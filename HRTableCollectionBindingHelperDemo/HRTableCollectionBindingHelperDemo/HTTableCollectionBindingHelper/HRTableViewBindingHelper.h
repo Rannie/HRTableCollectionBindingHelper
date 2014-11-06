@@ -1,5 +1,5 @@
 //
-//  HRTableBindingHelper.h
+//  HRTableViewBindingHelper.h
 //  HRTableCollectionBindingDemo
 //
 //  Created by Ran on 14/11/5.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <ReactiveCocoa.h>
 
-@interface HRTableBindingHelper : NSObject <UITableViewDataSource, UITableViewDelegate>
+@interface HRTableViewBindingHelper : NSObject <UITableViewDataSource, UITableViewDelegate>
 {
     UITableView     *_tableView;
     NSArray         *_data;

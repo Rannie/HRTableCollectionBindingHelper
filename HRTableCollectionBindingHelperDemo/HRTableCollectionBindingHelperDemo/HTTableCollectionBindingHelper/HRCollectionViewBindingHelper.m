@@ -1,19 +1,19 @@
 //
-//  HRCollectionBindingHelper.m
+//  HRCollectionViewBindingHelper.m
 //  HRTableCollectionBindingDemo
 //
 //  Created by Ran on 14/11/5.
 //  Copyright (c) 2014年 Rannie. All rights reserved.
 //
 
-#import "HRCollectionBindingHelper.h"
+#import "HRCollectionViewBindingHelper.h"
 #import "BindViewDelegate.h"
 
-@interface HRCollectionBindingHelper ()
+@interface HRCollectionViewBindingHelper ()
 @property (nonatomic, strong) NSString * cellIdentifier;
 @end
 
-@implementation HRCollectionBindingHelper
+@implementation HRCollectionViewBindingHelper
 
 #pragma mark - Initialize
 + (instancetype)bindWithCollectionView:(UICollectionView *)collectionView dataSource:(RACSignal *)source selectionCommand:(RACCommand *)command templateCell:(UINib *)nibCell

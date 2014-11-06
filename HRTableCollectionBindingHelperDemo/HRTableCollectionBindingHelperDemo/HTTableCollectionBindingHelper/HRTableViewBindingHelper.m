@@ -1,19 +1,19 @@
 //
-//  HRTableBindingHelper.m
+//  HRTableViewBindingHelper.m
 //  HRTableCollectionBindingDemo
 //
 //  Created by Ran on 14/11/5.
 //  Copyright (c) 2014年 Rannie. All rights reserved.
 //
 
-#import "HRTableBindingHelper.h"
+#import "HRTableViewBindingHelper.h"
 #import "BindViewDelegate.h"
 
-@interface HRTableBindingHelper ()
+@interface HRTableViewBindingHelper ()
 @property (nonatomic, strong) NSString * cellIdentifier;
 @end
 
-@implementation HRTableBindingHelper
+@implementation HRTableViewBindingHelper
 
 #pragma  mark - initialization
 + (instancetype)bindingForTableView:(UITableView *)tableView
