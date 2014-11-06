@@ -1,4 +1,4 @@
 HRTableCollectionBindingHelper
 ==========================
 
-Table view and Collection view binding helper.
+TableView and CollectionView binding helper.
