@@ -30,16 +30,17 @@ typedef void (^CollectionSelectionBlock)(id model);
                       selectionCommand:(RACCommand *)command
                  templateCellClassName:(NSString *)classCell;
 
-+ (instancetype)bindingForTableView:(UITableView *)tableView
-                         sourceList:(NSArray *)source
-                  didSelectionBlock:(CollectionSelectionBlock)block
-                       templateCell:(UINib *)templateCellNib;
++ (instancetype)bindingForCollectionView:(UICollectionView *)collectionView
+                              sourceList:(NSArray *)source
+                       didSelectionBlock:(CollectionSelectionBlock)block
+                            templateCell:(UINib *)templateCellNib;
 
-+ (instancetype)bindingForTableView:(UITableView *)tableView
-                         sourceList:(NSArray *)source
-                  didSelectionBlock:(CollectionSelectionBlock)block
-              templateCellClassName:(NSString *)templateCellClass;
++ (instancetype)bindingForCollectionView:(UICollectionView *)collectionView
+                              sourceList:(NSArray *)source
+                       didSelectionBlock:(CollectionSelectionBlock)block
+                   templateCellClassName:(NSString *)templateCellClass;
 
+- (void)reloadDataWithSourceList:(NSArray *)source;
 - (UICollectionViewCell *)dequeueCellAndBindInCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath;
 
 @end
