@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04FD506B1A0DB733005669D5 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD506A1A0DB733005669D5 /* User.m */; };
+		04FD506E1A0DB765005669D5 /* UserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD506D1A0DB765005669D5 /* UserViewModel.m */; };
+		04FD50711A0DB999005669D5 /* UserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04FD50701A0DB999005669D5 /* UserCell.m */; };
+		04FD50731A0DB9AA005669D5 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FD50721A0DB9AA005669D5 /* UserCell.xib */; };
 		656308D71A0B2C7500C6078F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 656308D61A0B2C7500C6078F /* main.m */; };
 		656308DA1A0B2C7500C6078F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 656308D91A0B2C7500C6078F /* AppDelegate.m */; };
 		656308DD1A0B2C7500C6078F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656308DC1A0B2C7500C6078F /* ViewController.m */; };
@@ -16,7 +20,6 @@
 		656308F11A0B2C7500C6078F /* HRTableCollectionBindingHelperDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 656308F01A0B2C7500C6078F /* HRTableCollectionBindingHelperDemoTests.m */; };
 		656309001A0B2C8700C6078F /* HRCollectionViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 656308FD1A0B2C8700C6078F /* HRCollectionViewBindingHelper.m */; };
 		656309011A0B2C8700C6078F /* HRTableViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 656308FF1A0B2C8700C6078F /* HRTableViewBindingHelper.m */; };
-		656309081A0B6B3C00C6078F /* HRKeyValueObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 656309071A0B6B3C00C6078F /* HRKeyValueObserver.m */; };
 		A379F243C78E647C566DB16C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FC377AF021B04B46245D37 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +34,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04FD50691A0DB733005669D5 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		04FD506A1A0DB733005669D5 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		04FD506C1A0DB765005669D5 /* UserViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewModel.h; sourceTree = "<group>"; };
+		04FD506D1A0DB765005669D5 /* UserViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewModel.m; sourceTree = "<group>"; };
+		04FD506F1A0DB999005669D5 /* UserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCell.h; sourceTree = "<group>"; };
+		04FD50701A0DB999005669D5 /* UserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCell.m; sourceTree = "<group>"; };
+		04FD50721A0DB9AA005669D5 /* UserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		656308D11A0B2C7500C6078F /* HRTableCollectionBindingHelperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HRTableCollectionBindingHelperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		656308D51A0B2C7500C6078F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656308D61A0B2C7500C6078F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,8 +59,6 @@
 		656308FD1A0B2C8700C6078F /* HRCollectionViewBindingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRCollectionViewBindingHelper.m; sourceTree = "<group>"; };
 		656308FE1A0B2C8700C6078F /* HRTableViewBindingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRTableViewBindingHelper.h; sourceTree = "<group>"; };
 		656308FF1A0B2C8700C6078F /* HRTableViewBindingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRTableViewBindingHelper.m; sourceTree = "<group>"; };
-		656309061A0B6B3C00C6078F /* HRKeyValueObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRKeyValueObserver.h; sourceTree = "<group>"; };
-		656309071A0B6B3C00C6078F /* HRKeyValueObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRKeyValueObserver.m; sourceTree = "<group>"; };
 		7F7056B2F73DA5897945D3A5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8539CB3AF1628AEBD403E5E7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D1FC377AF021B04B46245D37 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,12 +106,18 @@
 		656308D31A0B2C7500C6078F /* HRTableCollectionBindingHelperDemo */ = {
 			isa = PBXGroup;
 			children = (
-				656309051A0B6B3C00C6078F /* HRKeyValueObserver */,
 				656308FA1A0B2C8700C6078F /* HRTableCollectionBindingHelper */,
 				656308D81A0B2C7500C6078F /* AppDelegate.h */,
 				656308D91A0B2C7500C6078F /* AppDelegate.m */,
 				656308DB1A0B2C7500C6078F /* ViewController.h */,
 				656308DC1A0B2C7500C6078F /* ViewController.m */,
+				04FD50691A0DB733005669D5 /* User.h */,
+				04FD506A1A0DB733005669D5 /* User.m */,
+				04FD506C1A0DB765005669D5 /* UserViewModel.h */,
+				04FD506D1A0DB765005669D5 /* UserViewModel.m */,
+				04FD506F1A0DB999005669D5 /* UserCell.h */,
+				04FD50701A0DB999005669D5 /* UserCell.m */,
+				04FD50721A0DB9AA005669D5 /* UserCell.xib */,
 				656308DE1A0B2C7500C6078F /* Main.storyboard */,
 				656308E11A0B2C7500C6078F /* Images.xcassets */,
 				656308E31A0B2C7500C6078F /* LaunchScreen.xib */,
@@ -149,15 +163,6 @@
 			);
 			name = HRTableCollectionBindingHelper;
 			path = HTTableCollectionBindingHelper;
-			sourceTree = "<group>";
-		};
-		656309051A0B6B3C00C6078F /* HRKeyValueObserver */ = {
-			isa = PBXGroup;
-			children = (
-				656309061A0B6B3C00C6078F /* HRKeyValueObserver.h */,
-				656309071A0B6B3C00C6078F /* HRKeyValueObserver.m */,
-			);
-			path = HRKeyValueObserver;
 			sourceTree = "<group>";
 		};
 		BC67F6F41DC27AFA3C5CFCE9 /* Pods */ = {
@@ -259,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FD50731A0DB9AA005669D5 /* UserCell.xib in Resources */,
 				656308E01A0B2C7500C6078F /* Main.storyboard in Resources */,
 				656308E51A0B2C7500C6078F /* LaunchScreen.xib in Resources */,
 				656308E21A0B2C7500C6078F /* Images.xcassets in Resources */,
@@ -313,9 +319,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				656308DD1A0B2C7500C6078F /* ViewController.m in Sources */,
-				656309081A0B6B3C00C6078F /* HRKeyValueObserver.m in Sources */,
+				04FD506B1A0DB733005669D5 /* User.m in Sources */,
 				656308DA1A0B2C7500C6078F /* AppDelegate.m in Sources */,
+				04FD50711A0DB999005669D5 /* UserCell.m in Sources */,
 				656309011A0B2C8700C6078F /* HRTableViewBindingHelper.m in Sources */,
+				04FD506E1A0DB765005669D5 /* UserViewModel.m in Sources */,
 				656309001A0B2C8700C6078F /* HRCollectionViewBindingHelper.m in Sources */,
 				656308D71A0B2C7500C6078F /* main.m in Sources */,
 			);
