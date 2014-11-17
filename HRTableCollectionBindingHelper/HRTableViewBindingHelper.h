@@ -40,6 +40,7 @@ typedef void (^TableSelectionBlock)(id model);
                   didSelectionBlock:(TableSelectionBlock)block
               templateCellClassName:(NSString *)templateCellClass;
 
+- (void)customInitialization;
 - (void)reloadDataWithSourceList:(NSArray *)source;
 - (UITableViewCell *)dequeueCellAndBindInTable:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath;
 

@@ -13,7 +13,7 @@ typedef void (^CollectionSelectionBlock)(id model);
 
 @interface HRCollectionViewBindingHelper : NSObject <UICollectionViewDataSource, UICollectionViewDelegate>
 {
-    NSArray                     *_data;
+    NSMutableArray              *_data;
     UICollectionView            *_collectionView;
     UICollectionViewCell        *_templateCell;
     RACCommand                  *_selectCommand;
@@ -40,6 +40,7 @@ typedef void (^CollectionSelectionBlock)(id model);
                        didSelectionBlock:(CollectionSelectionBlock)block
                    templateCellClassName:(NSString *)templateCellClass;
 
+- (void)customInitialization;
 - (void)reloadDataWithSourceList:(NSArray *)source;
 - (UICollectionViewCell *)dequeueCellAndBindInCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath;
 

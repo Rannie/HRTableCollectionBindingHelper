@@ -18,8 +18,8 @@
 		656308E21A0B2C7500C6078F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656308E11A0B2C7500C6078F /* Images.xcassets */; };
 		656308E51A0B2C7500C6078F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656308E31A0B2C7500C6078F /* LaunchScreen.xib */; };
 		656308F11A0B2C7500C6078F /* HRTableCollectionBindingHelperDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 656308F01A0B2C7500C6078F /* HRTableCollectionBindingHelperDemoTests.m */; };
-		656309001A0B2C8700C6078F /* HRCollectionViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 656308FD1A0B2C8700C6078F /* HRCollectionViewBindingHelper.m */; };
-		656309011A0B2C8700C6078F /* HRTableViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 656308FF1A0B2C8700C6078F /* HRTableViewBindingHelper.m */; };
+		65A119001A19E7FE0003CFA7 /* HRCollectionViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A118FD1A19E7FE0003CFA7 /* HRCollectionViewBindingHelper.m */; };
+		65A119011A19E7FE0003CFA7 /* HRTableViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A118FF1A19E7FE0003CFA7 /* HRTableViewBindingHelper.m */; };
 		A379F243C78E647C566DB16C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FC377AF021B04B46245D37 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -54,11 +54,11 @@
 		656308EA1A0B2C7500C6078F /* HRTableCollectionBindingHelperDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HRTableCollectionBindingHelperDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		656308EF1A0B2C7500C6078F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656308F01A0B2C7500C6078F /* HRTableCollectionBindingHelperDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRTableCollectionBindingHelperDemoTests.m; sourceTree = "<group>"; };
-		656308FB1A0B2C8700C6078F /* BindViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindViewDelegate.h; sourceTree = "<group>"; };
-		656308FC1A0B2C8700C6078F /* HRCollectionViewBindingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRCollectionViewBindingHelper.h; sourceTree = "<group>"; };
-		656308FD1A0B2C8700C6078F /* HRCollectionViewBindingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRCollectionViewBindingHelper.m; sourceTree = "<group>"; };
-		656308FE1A0B2C8700C6078F /* HRTableViewBindingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRTableViewBindingHelper.h; sourceTree = "<group>"; };
-		656308FF1A0B2C8700C6078F /* HRTableViewBindingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRTableViewBindingHelper.m; sourceTree = "<group>"; };
+		65A118FB1A19E7FE0003CFA7 /* BindViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BindViewDelegate.h; sourceTree = "<group>"; };
+		65A118FC1A19E7FE0003CFA7 /* HRCollectionViewBindingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRCollectionViewBindingHelper.h; sourceTree = "<group>"; };
+		65A118FD1A19E7FE0003CFA7 /* HRCollectionViewBindingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRCollectionViewBindingHelper.m; sourceTree = "<group>"; };
+		65A118FE1A19E7FE0003CFA7 /* HRTableViewBindingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRTableViewBindingHelper.h; sourceTree = "<group>"; };
+		65A118FF1A19E7FE0003CFA7 /* HRTableViewBindingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRTableViewBindingHelper.m; sourceTree = "<group>"; };
 		7F7056B2F73DA5897945D3A5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8539CB3AF1628AEBD403E5E7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D1FC377AF021B04B46245D37 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,7 +106,7 @@
 		656308D31A0B2C7500C6078F /* HRTableCollectionBindingHelperDemo */ = {
 			isa = PBXGroup;
 			children = (
-				656308FA1A0B2C8700C6078F /* HRTableCollectionBindingHelper */,
+				65A118FA1A19E7FE0003CFA7 /* HRTableCollectionBindingHelper */,
 				656308D81A0B2C7500C6078F /* AppDelegate.h */,
 				656308D91A0B2C7500C6078F /* AppDelegate.m */,
 				656308DB1A0B2C7500C6078F /* ViewController.h */,
@@ -152,17 +152,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		656308FA1A0B2C8700C6078F /* HRTableCollectionBindingHelper */ = {
+		65A118FA1A19E7FE0003CFA7 /* HRTableCollectionBindingHelper */ = {
 			isa = PBXGroup;
 			children = (
-				656308FB1A0B2C8700C6078F /* BindViewDelegate.h */,
-				656308FC1A0B2C8700C6078F /* HRCollectionViewBindingHelper.h */,
-				656308FD1A0B2C8700C6078F /* HRCollectionViewBindingHelper.m */,
-				656308FE1A0B2C8700C6078F /* HRTableViewBindingHelper.h */,
-				656308FF1A0B2C8700C6078F /* HRTableViewBindingHelper.m */,
+				65A118FB1A19E7FE0003CFA7 /* BindViewDelegate.h */,
+				65A118FC1A19E7FE0003CFA7 /* HRCollectionViewBindingHelper.h */,
+				65A118FD1A19E7FE0003CFA7 /* HRCollectionViewBindingHelper.m */,
+				65A118FE1A19E7FE0003CFA7 /* HRTableViewBindingHelper.h */,
+				65A118FF1A19E7FE0003CFA7 /* HRTableViewBindingHelper.m */,
 			);
-			name = HRTableCollectionBindingHelper;
-			path = HTTableCollectionBindingHelper;
+			path = HRTableCollectionBindingHelper;
 			sourceTree = "<group>";
 		};
 		BC67F6F41DC27AFA3C5CFCE9 /* Pods */ = {
@@ -319,12 +318,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				656308DD1A0B2C7500C6078F /* ViewController.m in Sources */,
+				65A119001A19E7FE0003CFA7 /* HRCollectionViewBindingHelper.m in Sources */,
 				04FD506B1A0DB733005669D5 /* User.m in Sources */,
 				656308DA1A0B2C7500C6078F /* AppDelegate.m in Sources */,
 				04FD50711A0DB999005669D5 /* UserCell.m in Sources */,
-				656309011A0B2C8700C6078F /* HRTableViewBindingHelper.m in Sources */,
+				65A119011A19E7FE0003CFA7 /* HRTableViewBindingHelper.m in Sources */,
 				04FD506E1A0DB765005669D5 /* UserViewModel.m in Sources */,
-				656309001A0B2C8700C6078F /* HRCollectionViewBindingHelper.m in Sources */,
 				656308D71A0B2C7500C6078F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

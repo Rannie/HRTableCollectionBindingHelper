@@ -16,7 +16,6 @@
 @implementation HRTableViewBindingHelper
 
 #pragma  mark - initialization
-
 // RAC
 + (instancetype)bindingForTableView:(UITableView *)tableView sourceSignal:(RACSignal *)source didSelectionCommand: didSelection templateCell:(UINib *)templateCellNib {
     return [[self alloc] initWithTableView:tableView sourceSignal:source didSelectionCommand:didSelection templateCell:templateCellNib];
@@ -51,6 +50,8 @@
         _templateCell = [[templateCellNib instantiateWithOwner:nil options:nil] firstObject];
         [_tableView registerNib:templateCellNib forCellReuseIdentifier:_templateCell.reuseIdentifier];
         _tableView.rowHeight = _templateCell.bounds.size.height;
+        
+        [self customInitialization];
     }
     return self;
 }
@@ -59,6 +60,8 @@
     if (self = [self initWithTableView:tableView sourceSignal:source didSelectionCommand:didSelection]) {
         self.cellIdentifier = classCell;
         [tableView registerClass:NSClassFromString(classCell) forCellReuseIdentifier:classCell];
+        
+        [self customInitialization];
     }
     return self;
 }
@@ -93,6 +96,8 @@
         _templateCell = [[templateCellNib instantiateWithOwner:nil options:nil] firstObject];
         [_tableView registerNib:templateCellNib forCellReuseIdentifier:_templateCell.reuseIdentifier];
         _tableView.rowHeight = _templateCell.bounds.size.height;
+        
+        [self customInitialization];
     }
     return self;
 }
@@ -102,8 +107,14 @@
     if (self) {
         self.cellIdentifier = templateCellClass;
         [tableView registerClass:NSClassFromString(templateCellClass) forCellReuseIdentifier:templateCellClass];
+        
+        [self customInitialization];
     }
     return self;
+}
+
+- (void)customInitialization {
+    //abstract...
 }
 
 #pragma mark - UITableViewDataSource methods
@@ -129,7 +140,6 @@
     } else if (_selectionBlock) {
         _selectionBlock(_data[indexPath.row]);
     }
-    
 }
 
 #pragma mark - Action

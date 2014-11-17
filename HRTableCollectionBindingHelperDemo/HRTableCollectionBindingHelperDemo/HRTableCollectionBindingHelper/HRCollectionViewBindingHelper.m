@@ -34,10 +34,10 @@
     
     _collectionView = collectionView;
     _selectCommand = command;
-    _data = @[];
+    _data = [NSMutableArray array];
     
     [source subscribeNext:^(NSArray *dataList) {
-        _data = [NSArray arrayWithArray:dataList];
+        _data = [NSMutableArray arrayWithArray:dataList];
         [_collectionView reloadData];
     }];
     
@@ -49,20 +49,25 @@
 
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView dataSource:(RACSignal *)source selectionCommand:(RACCommand *)command templateCell:(UINib *)nibCell {
     self = [self initWithCollectionView:collectionView dataSource:source selectionCommand:command];
+    if (!self) return nil;
     
     _templateCell = [[nibCell instantiateWithOwner:nil options:nil] firstObject];
     _cellIdentifier = _templateCell.reuseIdentifier;
     [_collectionView registerNib:nibCell forCellWithReuseIdentifier:_cellIdentifier];
+    
+    [self customInitialization];
     
     return self;
 }
 
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView dataSource:(RACSignal *)source selectionCommand:(RACCommand *)command templateCellClassName:(NSString *)classCell {
     self = [self initWithCollectionView:collectionView dataSource:source selectionCommand:command];
+    if (!self) return nil;
     
     self.cellIdentifier = classCell;
     [_collectionView registerClass:NSClassFromString(classCell) forCellWithReuseIdentifier:_cellIdentifier];
     
+    [self customInitialization];
     return self;
 }
 
@@ -83,7 +88,7 @@
     if (!self) return nil;
     
     _collectionView = collectionView;
-    _data = source;
+    _data = [NSMutableArray arrayWithArray:source];
     _selectBlock = [block copy];
     
     _collectionView.dataSource = self;
@@ -98,6 +103,8 @@
     _templateCell = [[templateCellNib instantiateWithOwner:nil options:nil] firstObject];
     _cellIdentifier = _templateCell.reuseIdentifier;
     [_collectionView registerNib:templateCellNib forCellWithReuseIdentifier:_cellIdentifier];
+    
+    [self customInitialization];
     return self;
 }
 
@@ -106,7 +113,13 @@
     if (!self) return nil;
     self.cellIdentifier = templateCellClass;
     [_collectionView registerClass:NSClassFromString(templateCellClass) forCellWithReuseIdentifier:templateCellClass];
+    
+    [self customInitialization];
     return self;
+}
+
+- (void)customInitialization {
+    //abstract...
 }
 
 #pragma mark - DataSource and Delegate
@@ -136,7 +149,7 @@
 - (void)reloadDataWithSourceList:(NSArray *)source
 {
     if (source) {
-        _data = source;
+        _data = [NSMutableArray arrayWithArray:source];
     }
     [_collectionView reloadData];
 }
