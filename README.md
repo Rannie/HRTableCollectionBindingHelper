@@ -1,4 +1,4 @@
-HRTableCollectionBindingHelper
+HRTableCollectionBindingHelper(support reactivecocoa)
 ==========================
 
 TableView and CollectionView binding helper.
